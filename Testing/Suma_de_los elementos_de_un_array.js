@@ -1,11 +1,12 @@
-<h3 style="color: gray; text-align: center;">Suma de los elementos de un array</h3>
-<p>Con la función -reduce()- se puede obtener la suma de todos los números de un array.</p>
-<p>Existen varios métodos para lograrlo, comparamos algunos y únicamente en rendimiento.</p>
-<p>Presione "F12" para abrir la consola y ver el resultado.</p>
+/**
+ * # Suma de los elementos de un array
+ *
+ * Con la función -reduce()- se puede obtener la suma de todos los números de un array.
+ * Existen varios métodos para lograrlo, comparamos algunos y únicamente en rendimiento.
+ * Presione "F12" para abrir la consola y ver el resultado.
+ */
 
-<script>
 "use strict"  //Expresíón literal que obliga a correctas expresiones en JavaScript
-
 /**
  * # Variables globales
  * Llama a intBetween para obtener un array con todos los enteros entre dos números.
@@ -106,4 +107,3 @@
     console.log(mySum3());
     console.log(mySum4());
   });
-</script>
