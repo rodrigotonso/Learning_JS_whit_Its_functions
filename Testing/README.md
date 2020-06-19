@@ -1,4 +1,4 @@
-# Learning_JS_whit_Its_functions
- Learn JS by trying to build its functions ourselves and/or test them.
+# Learning_JS_whit_Its_functions - Testing
+  The comments are only in spanish at the moment.
 # Aprender JS con sus funciones
- Aprender JS tratando de construir sus funciones nosotros mismos y/o testeandolas.
+  Los comentarios se encuentran unicamente en español por el momento.
