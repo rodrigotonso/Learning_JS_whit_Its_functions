@@ -39,7 +39,7 @@
 /**
  * Con el siguiente código se analiza el rendimiento de distintas funciones para obtener la suma de todos los elementos del array.
  * Se obtuvo que la función de mejor rendimiento es -mySum2()- seguida muy próximamente por -mySum1()-.
- * Para ver los resultados habla esta página web en su navegador y presione "F12" para ver los resultados en consola-
+ * Para ver los resultados abrir esta página web en su navegador y presione "F12" para ver los resultados en consola-
  */
 
 
