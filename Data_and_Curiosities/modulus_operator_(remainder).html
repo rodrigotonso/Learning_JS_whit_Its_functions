@@ -1,0 +1,28 @@
+<script>
+/**
+ * En la documentación oficial de ECMA figura:
+ *
+	 6.1.6.1.6 Number::remainder ( n, d )
+	The % MultiplicativeOperator yields the remainder of its operands from an implied division; n is the dividend and d is the divisor.
+
+	NOTE
+	In C and C++, the remainder operator accepts only integral operands; in ECMAScript, it also accepts floating-point operands.
+
+	The result of a floating-point remainder operation as computed by the % operator is not the same as the “remainder” operation defined by IEEE 754-2019. The IEEE 754-2019 “remainder” operation computes the remainder from a rounding division, not a truncating division, and so its behaviour is not analogous to that of the usual integer remainder operator. Instead the ECMAScript language defines % on floating-point operations to behave in a manner analogous to that of the Java integer remainder operator; this may be compared with the C library function fmod.
+
+	The result of an ECMAScript floating-point remainder operation is determined by the rules of IEEE arithmetic:
+
+	If either operand is NaN, the result is NaN.
+	The sign of the result equals the sign of the dividend.
+	If the dividend is an infinity, or the divisor is a zero, or both, the result is NaN.
+	If the dividend is finite and the divisor is an infinity, the result equals the dividend.
+	If the dividend is a zero and the divisor is nonzero and finite, the result is the same as the dividend.
+	In the remaining cases, where neither an infinity, nor a zero, nor NaN is involved, the floating-point remainder r from a dividend n and a divisor d is defined by the mathematical relation r = n - (d × q) where q is an integer that is negative only if n/d is negative and positive only if n/d is positive, and whose magnitude is as large as possible without exceeding the magnitude of the true mathematical quotient of n and d. r is computed and rounded to the nearest representable value using IEEE 754-2019 roundTiesToEven mode.
+
+ * De lo anterior vale la pena remarcar que JS a diferencia de otros lenguajes como C, calcula el resto en divisiones con numeros no enteros.
+ * Recordemos que el resultado va a estar limitado por la precisión maxima de JS.
+ */
+ console.log("Cuenta 1: " + 4 % 3);
+ console.log("Cuenta 2: " + 4.1 % 3);
+ console.log("Cuenta 3: " + 4 % 3.1);
+</script>
